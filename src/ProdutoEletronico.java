@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 
 public class ProdutoEletronico extends Produto {
 	
 	private String marca;
 	
-	public ProdutoEletronico(int codigo, String nome, float preco) {
+	
+	public ProdutoEletronico(int codigo, String nome, float preco, String marca) {
 		super(codigo, nome, preco);
 		setMarca(marca);
 	}
@@ -12,8 +14,8 @@ public class ProdutoEletronico extends Produto {
 		this.marca = marca;
 	}
 	
-	public String getTipo() {
-		return "Eletrônico";
+	public String getMarca() {
+		return marca;
 	}
 
 }

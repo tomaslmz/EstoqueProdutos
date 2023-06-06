@@ -1,9 +1,11 @@
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class ProdutoAlimenticio extends Produto {
 
 	private Calendar dataValidade;
+	
 	
 	public ProdutoAlimenticio(int codigo, String nome, float preco, String dataValidade) {
 		super(codigo, nome, preco);
@@ -31,5 +33,4 @@ public class ProdutoAlimenticio extends Produto {
 	public String getTipo() {
 		return "Alimentício";
 	}
-
 }

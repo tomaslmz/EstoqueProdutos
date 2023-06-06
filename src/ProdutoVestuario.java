@@ -1,7 +1,9 @@
+import java.util.ArrayList;
 
 public class ProdutoVestuario extends Produto {
 
 	private Tamanhos tamanho;
+	
 	
 	public ProdutoVestuario(int codigo, String nome, float preco, Tamanhos tamanho) {
 		super(codigo, nome, preco);
@@ -13,7 +15,9 @@ public class ProdutoVestuario extends Produto {
 	}
 	
 	public String getTamanho() {
-		if(tamanho == Tamanhos.P) {
+		if(tamanho == Tamanhos.N) {
+			return "Não definido";
+		} else if(tamanho == Tamanhos.P) {
 			return "P";
 		} else if(tamanho == Tamanhos.M) {
 			return "M";

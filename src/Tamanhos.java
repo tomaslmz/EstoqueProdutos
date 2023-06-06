@@ -1,4 +1,4 @@
 
 public enum Tamanhos {
-	P, M, G, GG;
+	N, P, M, G, GG;
 }
